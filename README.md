@@ -1,5 +1,5 @@
 # EBURsnipper
-This script uses the EBUR128 system in FFMPEG to detect silences towards the beginning and end of several videos files in a folder, and then trims the video files at points halfway through those silences. The resulting output files can then be automated to a timeline in Premiere with transitions, making for easy editing. The original use was for editing CSGO highlights videos at gaps in the commentary, but if it helps anyone else, then great!
+This script uses the EBUR128 system in FFMPEG to detect silences towards the beginning and end of several video files in a folder, and then trims the video files at points halfway through those silences. The resulting output files can then be automated to a timeline in Premiere with transitions, making for easy editing. The original use was for editing CSGO highlights videos at gaps in the commentary, but if it helps anyone else, then great!
 
 The EBUR128 version of the silence snipper script aims to get a more exact reading of silences using the EBU R128 function in ffmpeg. We grab the Momentary silences from the output which measure every 100ms, and hopefully can make more exact snips using this, and find silences where the normal script could not.
 
